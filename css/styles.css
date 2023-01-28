@@ -17,6 +17,35 @@ body {
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    background-color: var(--white-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .point {
@@ -25,7 +54,12 @@ body {
 }
 
 
+
 /* header */
+
+header {
+    border-bottom: 1px solid var(--filter-btn);
+}
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -40,6 +74,13 @@ body {
     color: var(--primary-text-color);
 }
 
+.header-div {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+
 .footer-logo {
     color: var(--footerlogo-bcg-color);
 }
@@ -51,10 +92,17 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    display: flex;
+    margin-left: 76px;
+}
+
+.menu-items {
+    margin-right: 40px;
 }
 
 .menu-link {
     color: var(--primary-text-color);
+    display: block;
 }
 
 .menu-link:hover,
@@ -63,17 +111,22 @@ body {
 }
 
 
+
 .contact-list {
     font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--link-color);
+    display: flex;
+
+
 }
 
 .contact-link {
     font-style: normal;
     color: var(--link-color);
+    display: block;
 }
 
 .contact-link:hover,
@@ -81,11 +134,16 @@ body {
     color: var(--hover-focus-color);
 }
 
-
+.contact-items {
+    margin-right: 40px;
+}
 
 /* hero */
 .hero {
     background-color: var(--primary-text-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
     ;
 }
 
@@ -94,6 +152,10 @@ body {
     line-height: 1.07;
     text-align: center;
     color: var(--white-color);
+    margin-bottom: 48px;
+    width: 494px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-btn {
@@ -107,6 +169,7 @@ body {
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .hero-btn:hover,
@@ -136,8 +199,29 @@ body {
     text-transform: capitalize;
 }
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
+.quality-list {
+    display: flex;
+    gap: 24px;
+}
 
+.quality-title {
+    margin-bottom: 8px;
+}
+
+.specialization {
+    padding-top: 0;
+}
+
+.specialization-list {
+    padding-top: 60px;
+    display: flex;
+    gap: 24px;
+}
 
 /* team */
 
@@ -147,13 +231,32 @@ body {
 
 .team-items {
     background-color: var(--white-color);
+    flex-basis: calc((100%-72px)/4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    padding: 60px;
+}
+
+.wrap {
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.team-text {
+    margin-bottom: 8px;
 }
 
 /* footer */
 
 .foot {
     background-color: var(--primary-text-color);
-    ;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-text {
@@ -161,10 +264,20 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
-
+    width: 264px;
 }
 
+.logo-foot {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--logo-btn-color);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: block;
+
+}
 
 
 /* portfolio*/
@@ -181,6 +294,7 @@ body {
     cursor: pointer;
     border: 1px solid var(--filter-btn);
     border-radius: 4px;
+        padding: 11px 23px;
 }
 
 .filters-btn:hover,
@@ -193,4 +307,34 @@ body {
     line-height: 1.18;
     letter-spacing: 0.04em;
     color: var(--white-color);
+}
+
+.portfolio {
+    padding-top: 96px;
+}
+
+.filters-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.filters-btn {
+    margin-right: 24px;
+
+}
+
+.img-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 4px;
+}
+
+.delineation {
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-bottom: 32px;
+    border: 1px solid var(--filter-btn);
+    border-top: none;
 }
