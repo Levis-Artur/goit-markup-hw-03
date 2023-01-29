@@ -26,18 +26,18 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -96,13 +96,10 @@ header {
     margin-left: 76px;
 }
 
-.menu-items {
-    margin-right: 40px;
-}
-
 .menu-link {
     color: var(--primary-text-color);
     display: block;
+    margin-right: 40px;
 }
 
 .menu-link:hover,
@@ -110,17 +107,16 @@ header {
     color: var(--hover-focus-color);
 }
 
+.contact {
+    margin-left: auto;
+}
 
 
 .contact-list {
-    font-family: 'Roboto';
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--link-color);
     display: flex;
-
-
 }
 
 .contact-link {
@@ -153,7 +149,7 @@ header {
     text-align: center;
     color: var(--white-color);
     margin-bottom: 48px;
-    width: 494px;
+    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -190,6 +186,7 @@ header {
 .text {
     font-size: 16px;
     line-height: 1.5;
+    margin-top: 8px;
 }
 
 .section-title {
@@ -197,6 +194,7 @@ header {
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 60px;
 }
 
 .section {
@@ -206,7 +204,13 @@ header {
 
 .quality-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.quality-items {
+    flex-basis: calc((100% - 20px)/4);
+
 }
 
 .quality-title {
@@ -218,7 +222,6 @@ header {
 }
 
 .specialization-list {
-    padding-top: 60px;
     display: flex;
     gap: 24px;
 }
@@ -239,7 +242,6 @@ header {
 .team-list {
     display: flex;
     gap: 24px;
-    padding: 60px;
 }
 
 .wrap {
@@ -248,7 +250,7 @@ header {
 }
 
 .team-text {
-    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 /* footer */
@@ -294,18 +296,12 @@ header {
     cursor: pointer;
     border: 1px solid var(--filter-btn);
     border-radius: 4px;
-        padding: 11px 23px;
+    padding: 11px 23px;
 }
 
 .filters-btn:hover,
 .filters-btn:focus {
     background: var(--logo-btn-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 4px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.04em;
     color: var(--white-color);
 }
 
@@ -319,7 +315,7 @@ header {
     margin-bottom: 72px;
 }
 
-.filters-btn {
+.filters-items {
     margin-right: 24px;
 
 }
@@ -328,13 +324,15 @@ header {
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
-    column-gap: 4px;
+    column-gap: 24px;
+}
+
+.img-items {
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 .delineation {
-    padding-top: 32px;
-    padding-left: 16px;
-    padding-bottom: 32px;
+    padding: 32px 16px;
     border: 1px solid var(--filter-btn);
     border-top: none;
 }
